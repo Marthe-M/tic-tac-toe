@@ -1,0 +1,129 @@
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+.container,
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-container {
+  width: 80%;
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.scoreboard p {
+  margin: 1rem;
+  margin-bottom: 2px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Secular One", sans-serif;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 120px);
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  font-size: 5rem;
+  border: solid 1px rgb(95, 95, 95);
+  border-radius: 2px;
+  font-family: "Fredoka One", cursive;
+  background-color: rgb(207, 207, 207);
+}
+
+.square_o {
+  background-color: #ffc600;
+  color: #5800ff;
+}
+
+.square_x {
+  background-color: #5800ff;
+  color: #ffc600;
+}
+
+.reset {
+  margin: 1rem;
+  margin-bottom: 2px;
+  font-family: "Secular One", sans-serif;
+  font-size: 1rem;
+  color: #e900ff;
+  border: #e900ff solid 5px;
+  background-color: rgb(22, 22, 22);
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+.reset.new {
+  color: #ffc600;
+  border: #ffc600 solid 5px;
+}
+
+.reset:hover {
+  color: #5800ff;
+  border: #5800ff solid 5px;
+}
+
+.scoreboard h2 {
+  font-family: "Fredoka One", cursive;
+  color: #5800ff;
+}
+
+.scoreboard p {
+  font-family: "Fredoka One", cursive;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 2rem;
+  margin: 5px;
+  font-family: "Staatliches", cursive;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  font-family: "Secular One", sans-serif;
+  padding: 10px;
+  border: 0;
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  border-bottom: 5px solid #5800ff;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
